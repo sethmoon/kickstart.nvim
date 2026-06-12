@@ -694,7 +694,9 @@ require('lazy').setup({
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         -- ts_ls = {},
         --
-        volar = {},
+        vue_ls = {
+          filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
+        },
         jedi_language_server = {},
         intelephense = {},
         terraformls = {},
